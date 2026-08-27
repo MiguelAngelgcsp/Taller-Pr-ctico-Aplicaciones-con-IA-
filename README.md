@@ -21,8 +21,6 @@ procesar textos y gestionar un chat con roles definidos.
    python -m venv venv
    # Windows
    venv\Scripts\activate
-   # Linux / macOS
-   source venv/bin/activate
    ```
 
 3. Instala las dependencias:
