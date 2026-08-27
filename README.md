@@ -21,8 +21,6 @@ procesar textos y gestionar un chat con roles definidos.
    python -m venv venv
    # Windows
    venv\Scripts\activate
-   # Linux / macOS
-   source venv/bin/activate
    ```
 
 3. Instala las dependencias:
@@ -31,15 +29,15 @@ procesar textos y gestionar un chat con roles definidos.
    ```
 
 4. Configura tu API key como variable de entorno:
-   ```bash
-   # Windows (PowerShell)
-   $env:GEMINI_API_KEY="tu_api_key_aqui"
+   También puedes copiar `.env` y cargarla con una librería
+   como `python-dotenv`,así mismo debes importar la librería de google-genai.
 
-   # Linux / macOS
-   export GEMINI_API_KEY="tu_api_key_aqui"
-   ```
-   También puedes copiar `.env.example` a `.env` y cargarla con una librería
-   como `python-dotenv` si lo prefieres.
+   ## Comando de importación de librerias
+     pip install google-genai python-dotenv
+
+   ## inicia el entorno
+      Se debe crear la carpeta venv con el comando python -m venv venv
+      Inicializar la carpeta con: .\venv\Scripts\activate 
 
 ## Ejecución de cada ejercicio
 
@@ -71,8 +69,15 @@ vendedor amable. Escribe tus preguntas y presiona Enter; escribe
 
 ##  Evidencias de ejecución
 
-Las capturas de pantalla con la ejecución y salida de cada ejercicio se
-encuentran en la carpeta `evidencias/` (agregar al subir a GitHub).
+#Ejecución Ejercicio 1
+<img width="1600" height="863" alt="image" src="https://github.com/user-attachments/assets/bf32517c-e6a4-4d37-9797-ce8f1135e78b" />
+
+#Ejecución Ejercicio 2
+<img width="1600" height="872" alt="image" src="https://github.com/user-attachments/assets/03a273c7-001c-4032-91d4-8b8c0c02e1f8" />
+
+#Ejecución Ejercicio 3
+<img width="1600" height="873" alt="image" src="https://github.com/user-attachments/assets/2cbd8504-a4dc-465f-9832-aa6bdd7a38d1" />
+
 
 ##  Estructura del repositorio
 
