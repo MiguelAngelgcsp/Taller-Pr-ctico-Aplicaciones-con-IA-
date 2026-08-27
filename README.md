@@ -21,6 +21,8 @@ procesar textos y gestionar un chat con roles definidos.
    python -m venv venv
    # Windows
    venv\Scripts\activate
+   # Linux / macOS
+   source venv/bin/activate
    ```
 
 3. Instala las dependencias:
@@ -71,3 +73,19 @@ vendedor amable. Escribe tus preguntas y presiona Enter; escribe
 
 Las capturas de pantalla con la ejecución y salida de cada ejercicio se
 encuentran en la carpeta `evidencias/` (agregar al subir a GitHub).
+
+##  Estructura del repositorio
+
+```
+.
+├── ejercicio1_conexion_basica.py
+├── ejercicio2_procesador_textos.py
+├── ejercicio3_chat_soporte.py
+├── requirements.txt
+├── .env.example
+├── README.md
+└── evidencias/
+    ├── ejercicio1.png
+    ├── ejercicio2.png
+    └── ejercicio3.png
+```
