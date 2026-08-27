@@ -9,9 +9,6 @@ la tarea solicitada: "resumir" o "profesionalizar".
 import os
 from google import genai
 from google.genai import types
-from dotenv import load_dotenv
-
-load_dotenv()
 
 if not os.environ.get("GEMINI_API_KEY"):
     raise EnvironmentError(

@@ -7,11 +7,7 @@ una explicación de "Inferencia en IA" en menos de 50 palabras.
 
 import os
 from google import genai
-from dotenv import load_dotenv
 from google.genai import types
-
-load_dotenv()
-
 
 # El cliente toma la API key automáticamente de la variable de entorno
 # GEMINI_API_KEY. Validamos que exista antes de continuar.
@@ -33,8 +29,13 @@ def main() -> None:
     respuesta = cliente.models.generate_content(
         model=MODELO,
         contents=pregunta,
-        # Limitamos la longitud para reforzar la restricción de 50 palabras.
-        config=types.GenerateContentConfig(max_output_tokens=120),
+        # Limitamos la longitud para reforzar la restricción de 50 palabras
+        # y bajamos el nivel de "pensamiento" para que no consuma el
+        # presupuesto de tokens antes de escribir la respuesta.
+        config=types.GenerateContentConfig(
+            max_output_tokens=300,
+            thinking_config=types.ThinkingConfig(thinking_level="low"),
+        ),
     )
 
     print("Pregunta:", pregunta)

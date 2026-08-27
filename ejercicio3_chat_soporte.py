@@ -11,9 +11,7 @@ import os
 from google import genai
 from google.genai import types
 from google.genai.types import UserContent, ModelContent
-from dotenv import load_dotenv
 
-load_dotenv()
 if not os.environ.get("GEMINI_API_KEY"):
     raise EnvironmentError(
         "No se encontró la variable de entorno GEMINI_API_KEY. "
